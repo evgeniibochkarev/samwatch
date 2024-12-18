@@ -1,0 +1,74 @@
+body{
+	background: #333;
+}
+img{
+	width: 80px;
+}
+.img{
+	position: absolute;
+    left: 440px;
+    top: 40px;
+
+}
+.num{
+    width: 80px;
+    text-align: center;
+}
+.wrap{
+	display: flex;
+  font-size: 90px;
+  /*background-color: black;*/
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+
+  font-family: "Poiret One", serif;
+  font-weight: 400;
+  font-style: normal;	
+}
+#timer {
+  width: 460px;
+  font-size: 90px;
+  /*background-color: black;*/
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+
+  font-family: "Poiret One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#labels {
+  margin-top: -25px;
+  z-index: 2;
+  color: #fff;
+  font-size: 12px;
+    box-shadow: 5px 5px 5px #000;
+}
+#hh {margin-left: 45px;}
+#mm {margin-left: 80px;}
+#ss {margin-left: 70px;}
+#ms {margin-left: 45px;}
+
+#controls {
+  margin-left:150px;
+  margin-top: 30px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  float: left;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #000;
+}
+#go    { background-color: limegreen; }
+
+#stop  { background-color: red;  display: none; }
+
+#clear { background-color: yellow; display: none;}
+
+
