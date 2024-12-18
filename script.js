@@ -2,6 +2,7 @@
 
 // global object
 T = {} ;
+T.timerDiv0 = document.getElementById('timer0');
 T.timerDiv1 = document.getElementById('timer1');
 T.timerDiv2 = document.getElementById('timer2');
 T.timerDiv3 = document.getElementById('timer3');
@@ -17,7 +18,7 @@ function displayTimer() {
   timeNow = new Date().getTime(); // timestamp (miliseconds)
   
 	
-  T.difference = timeNow - T.timerStarted;
+  T.difference = T.timerStarted - timeNow;
 
   // milliseconds
   if(T.difference > 10) {
@@ -62,12 +63,12 @@ function displayTimer() {
   /*time  =  hours   + ':'
   time += minutes + ':'
   time += seconds */
-
-	T.timerDiv1.innerHTML = hours.toString()[0]
-	T.timerDiv2.innerHTML = hours.toString()[1] + ':'
+	T.timerDiv0.innerHTML = hours.toString()[0]
+	T.timerDiv1.innerHTML = hours.toString()[1]
+	T.timerDiv2.innerHTML = hours.toString()[2] 
 	
 	T.timerDiv3.innerHTML = minutes.toString()[0]
-	T.timerDiv4.innerHTML = minutes.toString()[1] + ':'
+	T.timerDiv4.innerHTML = minutes.toString()[1] 
 	
 	T.timerDiv5.innerHTML = seconds.toString()[0]
 	T.timerDiv6.innerHTML = seconds.toString()[1] 
@@ -75,8 +76,8 @@ function displayTimer() {
 
 function startTimer() {
   // save start time.getTime()
-  //			   
-  T.timerStarted = 1734386285733 - 60*60*1000*6 - 9*60*1000 + 17*1000 -  20*60*1000
+  //			   1735678800000
+  T.timerStarted = 1735678800000
   //T.timerStarted = new Date().getTime()
   //console.log('T.timerStarted: '+T.timerStarted)
 
