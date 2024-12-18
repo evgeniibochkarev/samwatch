@@ -63,10 +63,16 @@ function displayTimer() {
   /*time  =  hours   + ':'
   time += minutes + ':'
   time += seconds */
+
+  if(hours.toString().length > 2){
 	T.timerDiv0.innerHTML = hours.toString()[0]
 	T.timerDiv1.innerHTML = hours.toString()[1]
 	T.timerDiv2.innerHTML = hours.toString()[2] 
-	
+  }else{
+	T.timerDiv0.innerHTML = ""
+	T.timerDiv1.innerHTML = hours.toString()[0]	 
+	T.timerDiv2.innerHTML = hours.toString()[1] 	
+  }	
 	T.timerDiv3.innerHTML = minutes.toString()[0]
 	T.timerDiv4.innerHTML = minutes.toString()[1] 
 	
