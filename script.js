@@ -83,7 +83,7 @@ function displayTimer() {
 function startTimer() {
   // save start time.getTime()
   //			   1735678800000
-  T.timerStarted = 1735678800000
+  T.timerStarted = 1752926400000 //1735678800000
   //T.timerStarted = new Date().getTime()
   //console.log('T.timerStarted: '+T.timerStarted)
 
