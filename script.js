@@ -86,7 +86,9 @@ function startTimer() {
   T.timerStarted = 1752926400000 //1735678800000
   //T.timerStarted = new Date().getTime()
   //console.log('T.timerStarted: '+T.timerStarted)
-
+	var newYear2025 = new Date(2026, 0, 1, 0, 0, 0, 0).getTime();
+  T.timerStarted = newYear2025;
+	
   if (T.difference > 0) {
     T.timerStarted = T.timerStarted - T.difference
   }
@@ -120,3 +122,4 @@ function clearTimer() {
 }
 
 startTimer()
+
